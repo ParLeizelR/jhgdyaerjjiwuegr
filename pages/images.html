@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive Structure</title>
+    <link rel="stylesheet" href="../style.css/Customstyle.css">
+    <style>
+        /* Style for the article area and images */
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .image-container {
+            position: relative;
+            width: 200px;
+            margin: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-container .image-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            border-radius: 0 0 10px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .image-container:hover .image-name {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Additional styling for the article h1 */
+        article h1 {
+            color: #d125d7;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="image" src="../img/MSU.png" alt="">
+        <div>
+            <h1>College of Information and Computing Sciences</h1>
+            <h2>Bachelor of Science in Information System</h2>
+        </div>
+        <div class="container">
+            <a href="../index.html">HOME</a> |
+            <a href="about.html">ABOUT</a> |
+            <a href="contactus.html">CONTACT US</a> |
+            <a href="Admission.html">ADMISSION</a> |
+            <a href="profile.html">PROFILE</a> |
+            <button id="home_btn"><a href="login.html">LOG IN</a></button>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <br><a href="headings.html">Headings</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="tables.html">Tables</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="form.html">Form</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="images.html">Image</a><br><br>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h1><br><b><u>IMAGE</u></b></h1>
+            <div class="image-container">
+                <img src="../img/1743af68-0130-4893-b04b-722e76661ed5.jpg" alt="Liezel Par">
+                <div class="image-name">Liezel Par</div>
+            </div>
+            <div class="image-container">
+                <img src="../img/1f1e67a5-1314-4ec1-b4af-aeda61a03123.jpg" alt="Jonalyn Espares">
+                <div class="image-name">Jonalyn Espares</div>
+            </div>
+            <div class="image-container">
+                <img src="../img/b2eac985-f51f-4bb1-92bc-7618b775433a.jpg" alt="Joy Buhatin">
+                <div class="image-name">Joy Buhatin</div>
+            </div>
+            <div class="image-container">
+                <img src="../img/image4.jpg" alt="Russell Del Mundo">
+                <div class="image-name">Russell Del Mundo</div>
+            </div>
+        </article>
+        <footer>
+            <br><br><hr>
+            <h1>Marinduque State University</h1>
+            <div>
+                <a href="RefundPolicy.html">Refund policy</a> |
+                <a href="Termofuse.html">Term of Use</a> |
+                <a href="privatepolicy.html">Private policy</a> |
+                <a href="Faq's.html">FAQ's</a> |
+                <a href="Affiliate.html">Affiliate</a>
+            </div>
+            <div>
+                <p>
+                    <h4>Copright A TUTORIAL POINTS (MARINDUE) PRIVATE LIMITED.ALL RIGHT Reserved</h4>
+                </p>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
